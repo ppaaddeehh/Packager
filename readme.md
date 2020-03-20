@@ -17,3 +17,5 @@ Requirements
 * bzip2
 * dpkg
 
+## Coming soon
+* windows support
