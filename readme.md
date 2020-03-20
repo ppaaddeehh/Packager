@@ -8,7 +8,8 @@ Packager
 build using xcode, copy the file in the 'Build' folder into your repo directory and run the following command, and it will do all the work.
 > ./packager
 
-cannot build? a release will be provided.
+## [Download Binary](https://github.com/ppaaddeehh/Packager/releases/tag/1.0)
+If you should be unable to build via xcode, a release has been provided
 
 Requirements
 ---------------
