@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		AC385A3D242437AA00723FF3 /* packager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = packager; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC385A40242437AA00723FF3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AC385A482424463500723FF3 /* Packager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Packager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				AC385A40242437AA00723FF3 /* main.cpp */,
+				AC385A482424463500723FF3 /* Packager.h */,
 			);
 			path = packager;
 			sourceTree = "<group>";
@@ -72,6 +74,7 @@
 				AC385A39242437AA00723FF3 /* Sources */,
 				AC385A3A242437AA00723FF3 /* Frameworks */,
 				AC385A3B242437AA00723FF3 /* CopyFiles */,
+				AC385A472424380E00723FF3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -113,6 +116,26 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC385A472424380E00723FF3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp ${BUILT_PRODUCTS_DIR}/packager ${PROJECT_DIR}/packager/bin\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC385A39242437AA00723FF3 /* Sources */ = {
