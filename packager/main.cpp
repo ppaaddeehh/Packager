@@ -55,6 +55,11 @@ void startPackager(){
 int main(int argc, const char * argv[]) {
     printf("[Packager]: " ANSI_COLOR_BLUE  "Thanks for using Packager<3 \n" ANSI_COLOR_RESET);
     printf("[Packager]: " ANSI_COLOR_BLUE "Any problems, contact me via twitter @paddycodes\n" ANSI_COLOR_RESET);
-    startPackager();
+    if(PLATFORM_NAME == "osx"){
+        printf("[Packager]: detected OS " PLATFORM_NAME "\n");
+        startPackager();
+    } else {
+        printf("[Packager]: Packager only currently supports OSX\n");
+    }
     return 0;
 }
